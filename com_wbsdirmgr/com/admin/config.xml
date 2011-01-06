@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ComponentWideConfiguration>
+  <params>
+   <param name="baseFolderOverwrite" type="text" default="" label="LBL_BASE_FOLDER_ABS" description="DESC_BASE_FOLDER_ABS" size="40" />
+   <param name="allowedUploadFileExtensions" type="text" default="png,jpg,tiff,tif,gif,pdf" label="LBL_ALLOWED_FILE_TYPES" description="DESC_ALLOWED_FILE_TYPES" size="40" />
+   <!-- ACL -->
+   <param name="display" type="usergroup" default="25" label="LBL_RIGHT_DISPLAY" description="DESC_RIGHT_DISPLAY" />
+   <param name="opendir" type="usergroup" default="25" label="LBL_RIGHT_OPEN_DIR" description="DESC_RIGHT_OPEN_DIR" />
+  
+   <param name="createDir" type="usergroup" default="25" label="LBL_RIGHT_CREATE_DIR" description="DESC_RIGHT_CREATE_DIR" />
+   <param name="renameDir" type="usergroup" default="25" label="LBL_RIGHT_RENAME_DIR" description="DESC_RIGHT_RENAME_DIR" />
+   <param name="deleteDir" type="usergroup" default="25" label="LBL_RIGHT_DELETE_DIR" description="DESC_RIGHT_DELETE_DIR" />
+   
+   <param name="uploadFile" type="usergroup" default="25" label="LBL_RIGHT_UPLOAD_FILE" description="DESC_RIGHT_UPLOAD_FILE" />
+   <param name="renameFile" type="usergroup" default="25" label="LBL_RIGHT_RENAME_FILE" description="DESC_RIGHT_RENAME_FILE" />
+   <param name="deleteFile" type="usergroup" default="25" label="LBL_RIGHT_DELETE_FILE" description="DESC_RIGHT_DELETE_FILE" />
+  </params>
+</ComponentWideConfiguration>

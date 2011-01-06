@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Websein File Manager">
+		<message><![CDATA[Gallery Output]]></message>
+
+	</view>
+	<state>
+		<name> Gallery Output </name>
+		<description>Outputs Mediamanger as Gallery </description>
+
+		<params>
+			<param name="rekursive" type="radio" default="0" label="Rekursive"
+				description="If Rekursive all Folders and Subfolders are used">
+				<option value="0">Flat</option>
+				<option value="1">Rekursive</option>
+			</param>
+			<param name="fileTypes" type="text" default="jpg,png,gif,jpeg"
+				label="File Extensions"
+				description="Comma delimited list of file extensions that will be included in the output"
+				size="40" />
+
+			<param type="spacer" />
+			<param type="spacer" default="Thumbs" />
+			<param name="doThumbs" type="radio" default="1" label="Thumbs"
+				description="Enable thumbnailing">
+				<option value="0">Of</option>
+				<option value="1">On</option>
+			</param>
+			<param name="width" type="text" default="100" label="Width"
+				description="Thumb width in px" size="40" />
+			<param name="height" type="text" default="100" label="Height"
+				description="Thumb height in px" size="40" />
+			<param type="spacer" />
+			<param type="spacer" default="Output Style" />
+
+			<param name="outputAsHTML" type="radio" default="0" label="OutputStyle"
+				description="If HTML output will be done using html img tags">
+				<option value="0">HTML</option>
+				<option value="1">JavaScriptArray</option>
+			</param>
+				<param name="jsVar" type="text" default="items"
+				label="JSVarname"
+				description="The name of the variable that should hold the javascript json objects for the gallery output. It is used to avoid overrides from different modules and it might be needed to change this variable if there are more then one outputs of this component on one page or if it is used with the mod_dir_out module."
+				size="40" />
+		</params>
+	</state>
+</metadata>

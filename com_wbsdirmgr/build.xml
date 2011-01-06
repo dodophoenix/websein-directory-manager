@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     17.12.09 20:15                                                      
+
+     generatedComp
+                       
+     B.Jacob                                                      
+     ====================================================================== -->
+<project name="wbsdirmgr" default="default">
+    <description>
+          muhhar
+    </description>
+	<property name="version" value="0.0.5"></property>
+	<property name="joomlaType" value="com"></property><!--use one of: com | pl | mod -->
+	<property name="componentName" value="wbsdirmgr"></property>
+	<property name="srcDir" value="${basedir}/com"></property>
+	<property name="siteDir" value="${srcDir}/site"></property>
+	<property name="adminDir" value="${srcDir}/admin"></property>
+	<property name="langDir" value="${srcDir}/lang"></property>
+	
+	<property name="targetFilename" value="${joomlaType}_${componentName}-${version}.zip"></property>
+	<property name="moduleLibTarget" value="${basedir}/../moduleLib1.5/modules/webseinModules/${joomlaType}/"></property>
+  
+	<!-- ================================= 
+          target config              
+         ================================= -->
+	<target name="default" >
+		<antcall target="cpFilesFromJoomla" ></antcall>
+	</target>
+	
+		<!--<antcall target="buildFileList"></antcall>
+		<antcall target="buildComponent"></antcall>-->
+		<!--<antcall target="copyToModuleLib"></antcall>-->
+	
+	<!-- ================================= 
+	          targets               
+	================================= -->
+	<target name="cpFilesFromJoomla" description="Copy required Files">
+			<exec executable="${basedir}/copy.sh"></exec>
+	</target>
+	
+    <target name="buildComponent" description="zip installfile Creation" ><!-- depends="cpFiles"-->
+        <delete file="${basedir}/${targetFilename}"></delete>
+    	<zip destfile="${targetFilename}" basedir="${srcDir}"></zip>
+    </target>
+	
+	<target name="copyToModuleLib">
+		<exec executable="cp">
+			<arg value="${basedir}/${targetFilename}"/>
+			<arg value="${moduleLibTarget}"/>
+		</exec>
+	</target>
+	
+	<target name="buildFileList" description="Copy required Files">
+		
+		<exec executable="${basedir}/devel.sh">
+			<arg value="${siteDir}" />
+			<arg value="${adminDir}" />
+			<arg value="${componentName}"/>
+		</exec>
+	</target>
+</project>
