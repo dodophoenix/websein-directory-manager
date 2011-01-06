@@ -1,0 +1,104 @@
+@CHARSET "UTF-8";
+/**
+ * Websein Directory Manager (WbsDirMgr) Copyright (C) 2010 Benjamin Jacob websein UG 
+ *
+ * This file is part of Websein Directory Manager (WbsDirMgr)
+ *
+ * Websein Directory Manager (WbsDirMgr) is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * Websein Directory Manager (WbsDirMgr) is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with Websein Directory Manager (WbsDirMgr).  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * @link http://www.websein.com
+ * @license    GNU/GPL
+ * @author Benjamin Jacob
+ * 
+*/
+div.wbsentry {
+float:left;
+padding:3px 2%;
+position:relative;
+width:96%;
+}
+
+.fsizefield,.entryTools {
+	float: right;
+}
+
+.wbsDirMgrToolbar {
+background:none repeat scroll 0 0 #F2F2F2;
+border-bottom:1px dotted #C4C4C4;
+float:left;
+position:relative;
+text-align:left;
+width:100%;
+}
+
+.wbsDirMgrlocTxt {
+color:#292929;
+display:block;
+font-family:arial,sans-serif;
+font-size:13px;
+font-weight:bold;
+padding-left:11px;
+text-align:left;
+}
+
+-wbsDirMgrUpperDirLnk {
+	font-weight: bold;
+}
+
+.wbsdirMgrWrap {
+background:none repeat scroll 0 0 #F7F7F7;
+border:1px solid #DCDCDC;
+float:left;
+position:relative;
+width:100%;
+}
+.hoverActive{
+	background:#FFFFBE;
+	
+}
+input, select{
+border:1px solid silver;
+font-size:10px;
+cursor:pointer;
+}
+
+#folder{
+background:url("../img/icons/addfolder.png") no-repeat scroll 18px 8px white;
+border-bottom:1px dotted #D3D0D0;
+height:38px;
+padding-top:15px;
+width:100%;
+}
+#uploadfile{
+background:url("../img/icons/addfolder.png") no-repeat scroll 18px 8px white;
+border-bottom:1px dotted #D3D0D0;
+height:38px;
+padding-top:15px;
+width:100%;
+}
+.inputstyle{
+float:right;
+padding: 0 10px;
+}
+span.small{
+color:#666666;
+font-size:10px;
+left:305px;
+position:absolute;
+top:90px;
+}
+div.wbsentry img{
+margin-bottom:-5px;
+position:relative;
+}

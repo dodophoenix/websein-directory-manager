@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+        <view title="Websein File Manager">
+                <message><![CDATA[Default View ]]></message>
+        </view>
+       <params>
+        	<param name="showFullPath" type="radio" default="0" label="LBL_SHOW_FULL_PATH" description="DESC_SHOW_FULL_PATH" >
+        		<option value="0">VAL_SHORT</option>
+				<option value="1">VAL_COMPLETE</option>
+        		
+        	</param>
+        	<param name="jQuerySuppliedByTemplate" type="radio" default="1" label="LBL_JQUERY_SUPPLIED_BY_TEMPLATE" description="DESC_JQUERY_SUPPLIED_BY_TEMPLATE" >
+  				<option value="1">OPTION_JQUERY_NOT_SUPPLIED_BY_TEMPLATE</option>   	
+   	 			<option value="0">OPTION_JQUERY_SUPPLIED_BY_TEMPLATE</option>
+   			</param>
+       </params>
+       
+        
+</metadata>

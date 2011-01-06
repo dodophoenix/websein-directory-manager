@@ -1,0 +1,11 @@
+<filename>index.html</filename>
+<filename>wbsdirmgr.php</filename>
+<filename>config.xml</filename>
+<filename>views/index.html</filename>
+<filename>views/wbsdirmgr/index.html</filename>
+<filename>views/wbsdirmgr/tmpl/default.xml</filename>
+<filename>views/wbsdirmgr/tmpl/index.html</filename>
+<filename>views/wbsdirmgr/tmpl/default.php</filename>
+<filename>views/wbsdirmgr/view.html.php</filename>
+<filename>lang/de-DE.com_wbsdirmgr.ini</filename>
+<filename>controller.php</filename>
